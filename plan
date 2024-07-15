@@ -1,0 +1,16 @@
+Plan for Adding a Search Bar to Resume Viewer
+
+1. Add HTML for Search Bar:
+- Create an input field at the top of the HTML document with placeholder text "Search anything...".
+Style the Search Bar:
+
+2. Use CSS to style the search bar to float right with a top margin.
+- Define a CSS class .highlight to highlight matched text with a red background and bold font.
+JavaScript for Search Functionality:
+
+3. Get the search input and resumes container by their IDs.
+- Add an event listener to the search input for user input.
+- When typing, get the search term, convert to lowercase, and trim spaces.
+- Select all relevant elements in the resumes.
+- Loop through each element, split its text by the search term, and rebuild with highlights.
+- If it’s the first match, remember the element and scroll it into view smoothly.
