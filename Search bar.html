@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Viewer with Search</title>
+  <style>
+    /* Styling for search bar and highlighted text */
+    .search-bar {
+      float: right;
+      margin-top: 10px;
+    }
+    .highlight {
+      background-color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Search Bar -->
+<input type="text" id="searchInput" class="search-bar" placeholder="Search anything...">
+<br><br>
+
+<!-- Resumes -->
+<div id="resumes">
+  <!-- Resume Sample 1 - Entry Level Web Designr -->
+  <h2>Resume Sample 1 - Entry Level Web Designer</h2>
+  <h3>Mark L. Fernando</h3>
+  <p>29 A Mapang-Akit St., Pinyahan, Quezon City</p>
+  <p>+63 946 XXX XXXX | markfernando93@live.com</p>
+
+  <!-- Career Objective -->
+  <h4>Career Objective</h4>
+  <p>Secure a position in a creative and dynamic work environment where I can apply my skills in graphic arts and web design.</p>
+
+  <!-- Technical Skills -->
+  <h4>Technical Skills</h4>
+  <ul>
+    <li>Web and graphic design</li>
+    <li>Adobe Creative Suite (Photoshop, Illustrator, InDesign, Dreamweaver and Flash)</li>
+    <li>HTML, CSS, XML</li>
+    <li>MS Windows / Mac OS X / Linux</li>
+    <li>Microsoft Office Suite</li>
+  </ul>
+
+  <!-- Other Skills -->
+  <h4>Other Skills</h4>
+  <ul>
+    <li>Excellent time management skills</li>
+    <li>Strong interpersonal and communication skills</li>
+    <li>Analytical with excellent creative problem solving skills</li>
+    <li>Extremely organized and detail oriented</li>
+  </ul>
+
+  <!-- Education -->
+  <h4>Education</h4>
+  <p><b>BS in Information Technology</b></p>
+  <p>Informatics International College</p>
+  <p>June 2010 - March 2014</p>
+
+  <!-- Pre-Professional Experience -->
+  <h4>Pre-Professional Experience</h4>
+  <p><b>Graphic Design Intern</b></p>
+  <p>Infinite Technology Solutions</p>
+  <p>March 2013 - May 2013</p>
+
+  <!-- Awards Received -->
+  <h4>Awards Received</h4>
+  <p><b>Best Design Project - Product Design Category</b></p>
+  <p>4th Information Technology Festival, Informatics International College</p>
+
+  <!-- References -->
+  <h4>References</h4>
+  <p>Available upon request.</p>
+
+  <!-- Resume Sample 2 - Entry Level Web Developer -->
+  <h2>Resume Sample 2 - Entry Level Web Developer</h2>
+  <h3>Jennifer S. Oribe</h3>
+  <p>300 Westbank Road, Maybunga, Pasig City</p>
+  <p>+63 925 XXX XXXX | oribe.jennifer@ymail.com</p>
+
+  <!-- Career Objective -->
+  <h4>Career Objective</h4>
+  <p>As a recent graduate, I am eager to build a long-term career in the field of web development.</p>
+
+  <!-- Technical Skills -->
+  <h4>Technical Skills</h4>
+  <ul>
+    <li>Web development and web design</li>
+    <li>Web and mobile app development</li>
+    <li>Programming and front end coding</li>
+    <li>Graphic design and video Editing</li>
+  </ul>
+  <b>Operating Systems:</b> Windows, Mac OS X, Android and Linux<br>
+  <b>Languages:</b> C, C++, C#, HTML, XML, CSS, JavaScript, PHP, Java and Ruby<br>
+  <b>Applications:</b> MS Office, Photoshop, Illustrator, Dreamweaver, After Effects<br>
+  <b>Others:</b> WordPress, Joomla, Drupal, and WooCommerce
+
+  <!-- Personal Skills -->
+  <h4>Personal Skills</h4>
+  <ul>
+    <li>Excellent English skills</li>
+    <li>High level of maturity and sense of responsibility</li>
+    <li>Sound time management skills</li>
+    <li>Highly resourceful, objective and reliable</li>
+    <li>Ability to work in a team driven environment</li>
+  </ul>
+
+  <!-- Education -->
+  <h4>Education</h4>
+  <p><b>BS in Information Technology (Major in Web Development)</b></p>
+  <p>iAcademy</p>
+  <p>June 2011 - March 2015</p>
+  <b>Relevant Courses:</b> Advanced Programming, Object Oriented Programming, Web Design Standards and Workflow, Applications Development, Web Analytics and Web Animation and Interactivity
+
+  <!-- Pre-Professional Experience -->
+  <h4>Pre-Professional Experience</h4>
+  <p><b>Web Design Intern</b></p>
+  <p>Interlace Web Solutions</p>
+  <p>October 2014 - December 2014</p>
+
+  <p><b>Web Development Intern</b></p>
+  <p>Emerson Electric Asia Ltd.</p>
+  <p>June 2014 - August 2014</p>
+
+  <!-- Trainings Attended -->
+  <h4>Trainings Attended</h4>
+  <p><b>&lt;Form&gt; Function() &amp; .Class Web Design Conference 2014</b></p>
+  <p>De La Salle University - Manila</p>
+  <p>November 8, 2014</p>
+
+  <p><b>12th Youth Congress on Information Technology</b></p>
+  <p>SMX Convention Center, Pasay City</p>
+  <p>March 4, 2014</p>
+
+  <!-- References -->
+  <h4>References</h4>
+  <p>Will be provided upon request.</p>
+
+  <!-- Resume Sample 3 - Entry Level IT Specialist -->
+  <h2>Resume Sample 3 - Entry Level IT Specialist</h2>
+  <h3>Daniel Leopold S. Veron</h3>
+  <p>88 Enriquez St., Lucena City, Quezon, Philippines</p>
+  <p>+63 919 XXX XXXX | dlveron@gmail.com</p>
+
+  <!-- Career Objective -->
+  <h4>Career Objective</h4>
+  <p>Seeking an entry-level position in the field of information technology (IT) with a focus on hardware and network troubleshooting and IT equipment maintenance and monitoring.</p>
+
+  <!-- Technical Skills -->
+  <h4>Technical Skills</h4>
+  <ul>
+    <li>Network troubleshooting</li>
+    <li>Hardware troubleshooting, repair and maintenance</li>
+    <li>Systems analysis</li>
+    <li>Database design and implementation</li>
+    <li>Application programming</li>
+  </ul>
+  <b>Operating Systems:</b> Windows and Linux<br>
+  <b>Programming:</b> C++, C#, VB, HTML, JavaScript, CSS, PHP<br>
+  <b>Applications:</b> MS Office, Visual Studio, Photoshop, Dreamweaver, NetBeans, Blender and Macromedia Flash<br>
+  <b>Database Systems:</b> MySQL
+
+  <!-- Personal Skills -->
+  <h4>Personal Skills</h4>
+  <ul>
+    <li>Good verbal and written communication skills</li>
+    <li>Motivated and always willing to learn new things</li>
+    <li>Independent and self-sufficient in handling tasks</li>
+    <li>Collaborative and able to work in teams or groups</li>
+  </ul>
+
+  <!-- Education -->
+  <h4>Education</h4>
+  <p><b>Bachelor of Science in Information Technology</b></p>
+  <p>Manuel S. Enverga University</p>
+  <p>Lucena City, Quezon</p>
+  <p>2011 - 2015</p>
+
+  <!-- Pre-Professional Experience -->
+  <h4>Pre-Professional Experience</h4>
+  <p><b>IT Intern</b></p>
+  <p>IT Support and Maintenance Team</p>
+  <p>Tech One Global Phils., Inc.</p>
+  <p>June 2014 - October 2014</p>
+
+  <p><b>Student Assistant</b></p>
+  <p>College of Computer Studies</p>
+  <p>Manuel S. Enverga University</p>
+  <p>April 2012 - June 2014</p>
+
+  <!-- Trainings Attended -->
+  <h4>Trainings Attended</h4>
+  <p><b>Y4IT: 12th Youth Congress on Information Technology</b></p>
+  <p>SMX Convention Center, Pasay City</p>
+  <p>September 11, 2014</p>
+
+  <p><b>SAP Business One Training Course (TB1000 Logistics)</b></p>
+  <p>Manuel S. Enverga University</p>
+  <p>October 7, 2014</p>
+
+  <!-- Organizations -->
+  <h4>Organizations</h4>
+  <p><b>Vice-President</b></p>
+  <p>Youth Environmentalist Society</p>
+  <p>June 2014 - March 2015</p>
+
+  <p><b>Member</b></p>
+  <p>Junior Philippine Computer Society</p>
+  <p>October 2011 - March 2015</p>
+
+  <!-- Honors and Awards -->
+  <h4>Honors and Awards</h4>
+  <p><b>Top 12 Outstanding Student Leader</b></p>
+  <p>Search for Outstanding Student Leader of Lucena City</p>
+  <p>February 18, 2015</p>
+
+  <p><b>Champion</b></p>
+  <p>Annual Information Technology (IT) Quiz Bee</p>
+  <p>August 6, 2014</p>
+
+  <!-- References -->
+  <h4>References</h4>
+  <p>Available upon request.</p>
+
+</div>
+
+<!-- JavaScript for search-->
+<script>
+  const searchInput = document.getElementById('searchInput'); 
+  const resumes = document.getElementById('resumes');
+
+  searchInput.addEventListener('input', function() {
+    const searchTerm = searchInput.value.trim().toLowerCase();
+    const resumeElements = resumes.querySelectorAll('h2, h3, h4, p, li, b');
+
+    let firstMatch = null; //Create firstmatch = empty
+
+    resumeElements.forEach(element => { //forEach means loop
+      const text = element.textContent; 
+      const lowerText = text.toLowerCase();
+
+      const parts = lowerText.split(new RegExp(`(${searchTerm})`, 'gi'));
+      let highlightedText = '';
+
+      parts.forEach(part => {
+        if (part.toLowerCase() === searchTerm) {
+          highlightedText += `<span class="highlight">${part}</span>`;
+        } else {
+          highlightedText += part;
+        }
+      });
+
+      element.innerHTML = highlightedText; 
+
+      if (!firstMatch && highlightedText.includes('<span class="highlight">')) {
+        firstMatch = element; // this element is from resumeElement
+      }
+    });
+
+    if (firstMatch) {
+      firstMatch.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  });
+</script>
+
+</body>
+</html>
+
