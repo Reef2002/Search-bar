@@ -229,38 +229,71 @@
 <!-- JavaScript for search-->
 <script>
   const searchInput = document.getElementById('searchInput'); 
-  const resumes = document.getElementById('resumes');
+  // Get the input element with ID 'searchInput' and store it in searchInput.
 
-  searchInput.addEventListener('input', function() {
-    const searchTerm = searchInput.value.trim().toLowerCase();
+  const resumes = document.getElementById('resumes'); 
+  // Get the element with ID 'resumes' and store it in resumes.
+
+  searchInput.addEventListener('input', function() { 
+    // Add an event listener to searchInput that triggers on user input.
+
+    const searchTerm = searchInput.value.trim().toLowerCase(); 
+    // Get the input value, trim whitespace, convert to lowercase, and store in searchTerm.
+
     const resumeElements = resumes.querySelectorAll('h2, h3, h4, p, li, b');
+    // Select all elements within resumes that are h2, h3, h4, p, li, or b, and store in resumeElements.
 
-    let firstMatch = null; //Create firstmatch = empty
+    let firstMatch = null; 
+    // Initialize firstMatch to null to store the first matching element later.
 
-    resumeElements.forEach(element => { //forEach means loop
+    resumeElements.forEach(element => { 
+      // Loop through each element in resumeElements.
+
       const text = element.textContent; 
-      const lowerText = text.toLowerCase();
+      // Get the text content of the current element and store in text.
 
-      const parts = lowerText.split(new RegExp(`(${searchTerm})`, 'gi'));
-      let highlightedText = '';
+      const lowerText = text.toLowerCase(); 
+      // Convert text to lowercase and store in lowerText.
 
-      parts.forEach(part => {
-        if (part.toLowerCase() === searchTerm) {
-          highlightedText += `<span class="highlight">${part}</span>`;
-        } else {
-          highlightedText += part;
+      const parts = lowerText.split(new RegExp(`(${searchTerm})`, 'gi')); 
+      // Split lowerText by the searchTerm using a regular expression, and store in parts.
+
+      let highlightedText = ''; 
+      // Initialize highlightedText to an empty string to build the highlighted content.
+
+      parts.forEach(part => { 
+        // Loop through each part in parts.
+
+        if (part.toLowerCase() === searchTerm) { 
+          // Check if the part matches searchTerm.
+
+          highlightedText += `<span class="highlight">${part}</span>`; 
+          // If it matches, wrap it in a span with class 'highlight' and append to highlightedText.
+
+        } else { 
+          // If it doesn't match,
+
+          highlightedText += part; 
+          // Append the part as it is to highlightedText.
         }
       });
 
       element.innerHTML = highlightedText; 
+      // Set the innerHTML of the current element to the highlightedText.
 
       if (!firstMatch && highlightedText.includes('<span class="highlight">')) {
-        firstMatch = element; // this element is from resumeElement
+        // If firstMatch is still null and the highlightedText contains a highlight,
+
+        firstMatch = element; 
+        // Set firstMatch to the current element.
       }
     });
 
-    if (firstMatch) {
-      firstMatch.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    if (firstMatch) { 
+      // If there is a firstMatch,
+
+      firstMatch.scrollIntoView({ behavior: 'smooth', block: 'center' }); 
+      // Scroll the firstMatch into view smoothly and center it in the viewport.
     }
   });
 </script>
